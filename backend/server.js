@@ -32,4 +32,4 @@ app.use('/api/notes', require('./routes/notes'));
 app.get('/', (req, res) => res.send('Notes API is running'));
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT,'0.0.0.0', () => console.log(`Server running on port ${PORT}`));
